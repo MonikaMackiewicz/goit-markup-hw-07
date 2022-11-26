@@ -397,56 +397,55 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" data-modal-close>
+        <button class="modal__button" data-modal-close>
           <svg width="11px" height="11px">
               <use xlink:href="./images/icons.svg#icon-Vector"></use>
             </svg>
         </button>
-         <div class="modal-form">
+         <div class="modal__wrapper">
             <form>
-              <p class="modal-h3">Zostaw swoje dane w formularzu poniżej</p>
+              <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
               <form name="signup_form" autocomplete="on" novalidate>
-                <label class="modal-label">
-                  <span class="modal-p">Imie</span>
-                  <svg class="input-svg" width="18px" height="18px">
+                <label class="modal__label">
+                  <span class="modal__text">Imie</span>
+                  <svg class="input__icon" width="18px" height="18px">
                   <use xlink:href="./images/icons.svg#icon-person-black-18dp-1"></use>
                   </svg>
-                  <input class="modal-input" type="name" name="name" />
+                  <input class="modal__input" type="name" name="name" />
                 </label>
-                <label class="modal-label">
-                  <span class="modal-p">Telefon</span>
-                  <div class="input-div">
-                  <svg class="input-svg" width="18px" height="18px">
+                <label class="moda__label">
+                  <span class="modal__text">Telefon</span>
+                  <svg class="input__icon" width="18px" height="18px">
                   <use xlink:href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                   </svg>
-                  <input class="modal-input" type="phone" name="phone" />
+                  <input class="moda__input" type="phone" name="phone" />
                   </div>
                 </label>
-                <label class="modal-label">
-                  <span class="modal-p">Email</span>
+                <label class="moda__label">
+                  <span class="modal__text">Email</span>
                   <div class="input-div">
-                  <input class="modal-input" type="email" name="email" />
-                  <svg class="input-svg" width="18px" height="18px">
+                  <input class="moda__input" type="email" name="email" />
+                  <svg class="input__icon" width="18px" height="18px">
                   <use xlink:href="./images/icons.svg#icon-email-black-18dp-1"></use>
                   </svg>
                   </div>
                 </label>
-                <label class="modal-label">
-                  <span class="modal-p modal-p-2">Komentarz</span>
-                  <div class="modal-textarea">
-                  <textarea class="modal-in-textarea" name="feedback" placeholder="Wprowadź tekst"></textarea>
+                <label class="moda__label">
+                  <span class="modal__text modal__span">Komentarz</span>
+                  <div class="moda__textarea">
+                  <textarea class="moda__in-textarea" name="feedback" placeholder="Wprowadź tekst"></textarea>
                   </div>
                 </label>
-                <label class="label-policy">
-                  <input class="policy-window" type="checkbox" name="policy-checkbox" />
+                <label class="label__policy">
+                  <input class="policy__window" type="checkbox" name="policy-checkbox" />
                   <span> 
-                  <svg class="policy-svg" width="16px" height="15px">
+                  <svg class="policy__icon" width="16px" height="15px">
                     <use xlink:href="./images/icons.svg#icon-checkbox"></use>
                     </svg>
                   </span>
-                  <p class="policy-text">Oświadczam iż akceptuję&nbsp<a href="/">Regulamin</a>&nbspi&nbsp<a href="/">Politykę Prywatności</a>.</p>
+                  <p class="policy__text">Oświadczam iż akceptuję&nbsp<a href="/">Regulamin</a>&nbspi&nbsp<a href="/">Politykę Prywatności</a>.</p>
                 </label>
-                <button class="modal-button-2" type="submit">Wyślij</button>
+                <button class="modal__button-send" type="submit">Wyślij</button>
               </form>
             </form>
             </div>
