@@ -18,38 +18,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
       <div class="menu-nav">
-        <nav>
+        <nav class="menu-nav__wrapper">
         <a href="./index.html" class="logo"
-          >Web<span class="logo-1">Studio</span></a
+          >Web<span class="logo menu-nav__logo">Studio</span></a
         >
           <div>
-            <ul class="header-link hl1">
+            <ul class="menu-nav__links menu-nav__links--primary">
               <li>
-                <a href="./index.html" class="menu-nav-link">Agencja</a>
+                <a href="./index.html" class="menu-nav__link link">Agencja</a>
               </li>
               <li>
-                <a href="./portfolio.html" class="menu-nav-link underline">Portfolio</a>
+                <a href="./portfolio.html" class="link menu-nav__link menu-nav__underline">Portfolio</a>
               </li>
-              <li><a href="/" class="menu-nav-link">Kontakt</a></li>
+              <li><a href="/" class="link menu-nav__link">Kontakt</a></li>
             </ul>
           </div>
         </nav>
-        <ul class="header-link hl2">
+        <ul class="menu-nav__links menu-nav__links--secondary">
           <li>
-            <a href="info@example.com" class="link envelope"><svg class="header-svg" width="16px" height="12px">
+            <a href="info@example.com" class="link link__icon--envelope"><svg class="link__icon" width="16px" height="12px">
               <use xlink:href="./images/icons.svg#icon-envelope"></use>
             </svg>info@example.com</a>
           </li>
           <li>
-            <a href="tel:+48111111111" class="link smartphone"><svg class="header-svg" width="10px" height="16px">
+            <a href="tel:+48111111111" class="link link__icon--smartphone"><svg class="link__icon" width="10px" height="16px">
               <use xlink:href="./images/icons.svg#icon-smartphone"></use>
             </svg>+48 111 111 111</a>
           </li>
         </ul>
        </div>
+      </div>
     </header>
     <div class="container">
       <ul class="ul-button">
@@ -213,61 +214,59 @@
         </ul>
       </div>
     </section>
+
     <footer>
       <div class="footer">
         <div class="container">
-          <div class="footer-display">
+          <div class="footer__wrapper">
             <div>
-            <div class="footer-logo">
-              <a href="./index.html" class="logo"
-                >Web<span class="logo-2"> Studio</span></a
-              >
+            <div class="footer__logo">
+              <a href="./index.html" class="logo">Web<span class="footer__logo">Studio</span></a>
             </div>
             <div>
-              <address class="address">
+              <address class="footer__address">
                 m. Warszawa, Aleje Jerozolimskie 21<br />
                 <ul>
                   <li>
-                    <a href="info@example.com" class="link">info@example.com</a>
+                    <a href="info@example.com" class="link footer__link">info@example.com</a>
                   </li>
                   <li>
-                    <a href="tel:+48111111111" class="link">+48 111 111 111</a>
+                    <a href="tel:+48111111111" class="link footer__link">+48 111 111 111</a>
                   </li>
                 </ul>
               </address>
             </div>
             </div>
-            <div class="footer-socials">
-              <h3 class="h3 logo-2">Dołącz do nas</h3>
-              <div class="we-svg footer-sm">
-                    <div class="svg-circle footer-svg">
+            <div class="footer__socials">
+              <h3 class="footer__title">Dołącz do nas</h3>
+              <div class="icon__wrapper socials__wrapper">
+                <div class="icon footer__icon">
                   <svg width="20px" height="20px">
-                <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
-              </svg></div>
-               <div class="svg-circle footer-svg">
+                  <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg></div>
+                <div class="icon footer__icon">
                   <svg width="20px" height="20px">
-                <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
-              </svg></div>
-               <div class="svg-circle footer-svg">
+                  <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg></div>
+                <div class="icon footer__icon">
                   <svg width="20px" height="20px">
-                <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
-              </svg></div>
-               <div class="svg-circle footer-svg">
+                  <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg></div>
+                <div class="icon footer__icon">
                   <svg width="20px" height="20px">
-                <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg></div>
+                  <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg></div>
               </div>
             </div>
             <div class="newsletter">
               <form>
-              <h3 class="h3 logo-2">Zapisz się do newslettera</h3>
+              <h3 class="footer__title">Zapisz się do newslettera</h3>
               <form name="signup_form" autocomplete="on" novalidate>
-                <label for="user_email"></label>
-                  <input class="email-input" type="email" name="email" id="user_email" placeholder="E-mail"/>
-              <button class="send" type="submit">Zapisz się<svg class="footer-svg-2" width="24px" height="24px">
-              <use xlink:href="./images/icons.svg#icon-send"></use>
-            </svg></button>
-            </form>
+                <input class="newsletter__input" type="email" name="email" id="user_email" placeholder="E-mail"/>
+                <button class="newsletter__button" type="submit">Zapisz się<svg class="newsletter__icon" width="24px" height="24px">
+                  <use xlink:href="./images/icons.svg#icon-send"></use>
+                  </svg></button>
+              </form>
             </div>
           </div>
         </div>
