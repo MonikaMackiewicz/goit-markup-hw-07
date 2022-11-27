@@ -139,7 +139,7 @@ ul {
   list-style-type: none;
 }
 
-.order-section {
+.order {
   padding: 200px 0;
   background-image: linear-gradient(
     to bottom,
@@ -151,7 +151,7 @@ ul {
   margin: auto;
 }
 
-.order-section__wrapper {
+.order__wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -160,7 +160,7 @@ ul {
   text-align: center;
 }
 
-.order-section__text {
+.order__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,7 +173,7 @@ ul {
   max-width: 696px;
 }
 
-.order-section__button {
+.order__button {
   background: var(--accent-color);
   color: var(--background);
   font-family: "Roboto", sans-serif;
@@ -188,8 +188,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-section__button:hover,
-.order-section__button:focus {
+.order__button:hover,
+.order__button:focus {
   color: var(--accent-color);
 }
 
@@ -197,25 +197,25 @@ ul {
   display: none;
 }
 
-.features-section {
+.features {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.features-section__wrapper {
+.features__wrapper {
   display: flex;
   gap: 30px;
   padding: 0;
   margin: 0;
 }
 
-.features-section__display {
+.features__display {
   flex-basis: calc((100% - 20px) / 4);
   padding: 0;
 }
 
-.features-section__icon {
+.features__icon {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: var(--portfolio-button);
@@ -225,7 +225,7 @@ ul {
   justify-content: center;
 }
 
-.features-section__title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -235,7 +235,7 @@ ul {
   padding-top: 30px;
 }
 
-.features-section__text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--less-i-tex);
