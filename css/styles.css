@@ -301,6 +301,11 @@ ul {
   background: #f5f4fa;
 }
 
+.our-team__heading {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
 .our-team__container {
   display: flex;
   justify-content: space-between;
@@ -315,15 +320,12 @@ ul {
   padding-left: 0;
 }
 
-.our-team__wrapper > li {
-  position: relative;
-}
-
 .our-team__card {
   background: var(--background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  position: relative;
 }
 
 .our-team__name {
@@ -346,28 +348,31 @@ ul {
   padding-bottom: 10px;
 }
 
-.icon__wrapper {
+.our-team__icons-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 16px 30px 30px 30px;
 }
 
-.icon {
+.our-team__socials-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-icon {
   border-radius: 50%;
   width: 44px;
   height: 44px;
   background-color: var(--background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   fill: var(--our-clients);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon:focus,
-.icon:hover {
+.socials-icon:focus,
+.socials-icon:hover {
   fill: var(--background);
   background-color: var(--accent-color);
 }
