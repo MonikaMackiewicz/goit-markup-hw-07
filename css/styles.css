@@ -120,7 +120,7 @@ body {
   margin-right: 10px;
 }
 
-.menu-nav__underline {
+.menu-nav--underline {
   position: relative;
 }
 
@@ -306,6 +306,7 @@ ul {
   display: flex;
   justify-content: center;
 }
+
 .our-team__container {
   display: flex;
   justify-content: space-between;
@@ -378,13 +379,19 @@ ul {
 }
 
 .our-clients {
+  width: 1170px;
+}
+
+.our-clients__heading {
+  padding-bottom: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
 .our-clients__wrapper {
-  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .our-clients__icon {
@@ -426,7 +433,6 @@ ul {
   text-decoration: none;
   color: var(--accent-color);
   letter-spacing: 0.03em;
-  margin-right: 93px;
 }
 
 .menu-nav__logo {
@@ -438,6 +444,9 @@ ul {
   padding-bottom: 20px;
 }
 
+.footer__logo--margin {
+  margin-right: 93px;
+}
 .logo:visited {
   color: var(--accent-color);
 }
@@ -466,31 +475,28 @@ ul {
 }
 
 .footer__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--background);
   margin-block: 20px;
+  display: flex;
 }
 
-.socials__wrapper {
-  padding: 0;
+.footer__socials--wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
-.footer__icon {
+.footer__socials-icon {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--background);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__icon:focus,
-.footer__icon:hover {
+.footer__socials-icon:focus,
+.footer__socials-icon:hover {
   fill: var(--background);
   background-color: var(--accent-color);
 }
@@ -663,7 +669,7 @@ ul {
   top: -23%;
 }
 
-.moda__textarea {
+.modal__textarea {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -671,7 +677,7 @@ ul {
   display: flex;
 }
 
-.moda__in-textarea {
+.modal__in-textarea {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;

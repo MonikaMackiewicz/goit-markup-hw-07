@@ -28,7 +28,7 @@
           <div>
             <ul class="menu-nav__links menu-nav__links--primary">
               <li>
-                <a href="./index.html" class="link menu-nav__link menu-nav__underline">Agencja</a>
+                <a href="./index.html" class="link menu-nav__link menu-nav--underline">Agencja</a>
               </li>
               <li>
                 <a href="./portfolio.html" class="link menu-nav__link">Portfolio</a>
@@ -291,9 +291,9 @@
       <section class="section">
         <div class="container">
           <div>
-            <h2 class="section-title">Nasi klienci</h2>
-            <div class="our-clients__wrapper">
-            <ul class="our-clients">
+            <h2 class="h2-heading our-clients__heading">Nasi klienci</h2>
+            <div class="our-clients">
+            <ul class="our-clients__wrapper">
               <li>
                 <div class="our-clients__icon">
                 <svg width="41px" height="46.7px">
@@ -346,7 +346,7 @@
           <div class="footer__wrapper">
             <div>
             <div class="footer__logo">
-              <a href="./index.html" class="logo">Web<span class="footer__logo">Studio</span></a>
+              <a href="./index.html" class="logo footer__logo--margin">Web<span class="footer__logo">Studio</span></a>
             </div>
             <div>
               <address class="footer__address">
@@ -363,35 +363,38 @@
             </div>
             </div>
             <div class="footer__socials">
-              <h3 class="footer__title">Dołącz do nas</h3>
-              <div class="icon__wrapper socials__wrapper">
-                <div class="icon footer__icon">
+                <h3 class="h3-title footer__title">Dołącz do nas</h3>
+                <div class="footer__socials--wrapper">
+                <div class="socials-icon footer__socials-icon">
                   <svg width="20px" height="20px">
                   <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg></div>
-                <div class="icon footer__icon">
+                <div class="socials-icon footer__socials-icon">
                   <svg width="20px" height="20px">
                   <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg></div>
-                <div class="icon footer__icon">
+                <div class="socials-icon footer__socials-icon">
                   <svg width="20px" height="20px">
                   <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg></div>
-                <div class="icon footer__icon">
+                <div class="socials-icon footer__socials-icon">
                   <svg width="20px" height="20px">
                   <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg></div>
               </div>
             </div>
-            <div class="newsletter">
-              <form>
-              <h3 class="footer__title">Zapisz się do newslettera</h3>
-              <form name="signup_form" autocomplete="on" novalidate>
+            <div>
+              <div class="newsletter">
+                <div>
+                <h3 class="h3-title footer__title">Zapisz się do newslettera</h3>
+                <form name="signup_form" autocomplete="on" novalidate>
                 <input class="newsletter__input" type="email" name="email" id="user_email" placeholder="E-mail"/>
                 <button class="newsletter__button" type="submit">Zapisz się<svg class="newsletter__icon" width="24px" height="24px">
                   <use xlink:href="./images/icons.svg#icon-send"></use>
                   </svg></button>
-              </form>
+                </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
