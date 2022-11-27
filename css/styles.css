@@ -243,7 +243,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.offer__wrapper {
+.offer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -251,7 +251,7 @@ ul {
   padding-left: 0;
 }
 
-.offer__wrapper > li {
+.offer__wrapper {
   position: relative;
 }
 
@@ -269,7 +269,7 @@ ul {
   right: 0;
 }
 
-.offer__title {
+.h3-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -278,14 +278,20 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background);
+}
+
+.offer__title {
   padding-block: 27px;
 }
 
-.section-title {
+.h2-heading {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
   color: var(--main-color);
+}
+
+.offer__heading {
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
