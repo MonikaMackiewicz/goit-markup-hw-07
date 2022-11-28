@@ -124,7 +124,7 @@ body {
   position: relative;
 }
 
-.menu-nav__underline::after {
+.menu-nav--underline::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -437,6 +437,7 @@ ul {
 
 .menu-nav__logo {
   color: var(--main-color);
+  margin-right: 93px;
 }
 
 .footer__logo {
@@ -787,7 +788,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ul-button {
+.filters {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -797,7 +798,7 @@ ul {
   margin: 0;
 }
 
-.portfolio-button {
+.filters__button {
   color: var(--main-color);
   background: var(--portfolio-button);
   border-radius: 4px;
@@ -812,15 +813,15 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.filters__button:hover,
+.filters__button:focus {
   background: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.ul-main-portfolio {
+.projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -829,7 +830,16 @@ ul {
   box-sizing: border-box;
 }
 
-.border-main-portfolio {
+.projects__container {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__border {
   background: var(--background);
   border: 1px solid #eeeeee;
   border-top: 0;
@@ -839,8 +849,12 @@ ul {
   box-sizing: border-box;
 }
 
-.border-main-portfolio:hover,
-.border-main-portfolio:focus {
+.projects__img {
+  display: block;
+}
+
+.projects__border:hover,
+.projects__border:focus {
   background: var(--background);
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -848,20 +862,7 @@ ul {
   box-sizing: border-box;
 }
 
-.li-main-portfolio {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.portfolio-img {
-  display: block;
-}
-
-.portfolio-overlay {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay {
+.projects__overlay {
   background-color: rgba(33, 150, 243, 0.9);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -878,7 +879,7 @@ ul {
   align-items: center;
 }
 
-.overlay p {
+.projects__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -889,11 +890,11 @@ ul {
   padding-left: 24px;
 }
 
-.li-main-portfolio:hover .overlay {
+.projects__container:hover .projects__overlay {
   transform: translateY(0);
 }
 
-.portfolio-h3 {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -902,7 +903,7 @@ ul {
   margin: 0;
 }
 
-.portfolio-p {
+.projects__description {
   font-size: 16px;
   line-height: 1.86;
   color: var(--less-i-tex);
