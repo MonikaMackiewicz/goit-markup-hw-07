@@ -462,7 +462,7 @@ ul {
 
 .footer__address > ul {
   padding: 0;
-  margin: 9 0 0 0;
+  margin: 0;
 }
 
 .footer__link {
@@ -532,9 +532,10 @@ ul {
 }
 
 .newsletter__input:hover,
-.newsletter__inputt:focus {
+.newsletter__input:focus {
   border-color: var(--accent-color);
 }
+
 .newsletter__button {
   background-color: var(--accent-color);
   color: var(--background);
@@ -607,7 +608,7 @@ ul {
   align-items: center;
 }
 
-.modal__title {
+.modal__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -633,7 +634,7 @@ ul {
   fill: var(--accent-color);
 }
 
-.modal__text {
+.modal__title {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -647,7 +648,7 @@ ul {
   left: 8%;
 }
 
-.input__icon {
+.modal__icon {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -687,7 +688,6 @@ ul {
   width: 416px;
   height: 96px;
   border: none;
-  border-color: none;
   margin: 12px 16px 12px 16px;
   resize: none;
   transition-duration: 250ms;
@@ -719,13 +719,6 @@ ul {
   padding: 10px 76px 10px 76px;
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal__button-send:hover,
-.modal__button-send:focus {
-  background: var(--accent-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .label__policy {
@@ -783,7 +776,6 @@ ul {
   width: 15px;
   height: 16px;
   border: 2px solid var(--main-color);
-  justify-content: baseline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
