@@ -1,0 +1,64 @@
+.policy {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: baseline;
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--less-i-tex);
+    margin-top: -8px;
+    margin-left: 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    & > a {
+      color: var($colorAccent);
+    }
+
+    &:hover,
+    &:focus {
+      stroke: var($colorAccent);
+      cursor: pointer;
+    }
+  }
+
+  &__window {
+    position: absolute;
+    bottom: 127px;
+    left: 40px;
+    height: 16px;
+    width: 15px;
+    visibility: hidden;
+
+    &:checked + span svg {
+      background-color: var($colorAccent);
+      border-radius: 4px;
+      width: 15px;
+      height: 16px;
+      border: 2px solid var($colorAccent);
+    }
+  }
+
+  &__icon {
+    background-color: var($backgroundColor);
+    border-radius: 4px;
+    width: 15px;
+    height: 16px;
+    border: 2px solid var($colorMain);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
