@@ -1,6 +1,12 @@
-@import "./utils/colors";
+@use "./utils/colors" as *;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var($colorMain);
+  background: var ($backgroundColor);
+}
+
 @import "./utils/reset";
-@import "./utils/body";
 @import "./utils/container";
 @import "./utils/section";
 @import "./utils/link";
