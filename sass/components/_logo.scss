@@ -4,10 +4,6 @@
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
-  color: var($colorAccent);
+  color: $colorAccent;
   letter-spacing: 0.03em;
-
-  &:visited {
-    color: var($colorAccent);
-  }
 }

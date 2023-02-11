@@ -3,20 +3,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-  }
+.menu-nav__wrapper {
+  display: flex;
+  align-items: center;
+}
 
-  &__icon {
-    margin-right: 10px;
-  }
+.menu-nav__icon {
+  margin-right: 10px;
+}
 
-  &__logo {
-    color: var($colorMain);
-    margin-right: 93px;
-  }
+.menu-nav__logo {
+  color: $colorMain;
+  margin-right: 93px;
 }
 
 .menu-nav__links {
@@ -39,25 +39,25 @@
 }
 
 .menu-nav__link {
-  color: var($colorMain);
+  color: $colorMain;
 }
 
 .menu-nav__link--envelope,
 .menu-nav__link--smartphone {
-  fill: var($colorLessITex);
+  fill: $colorLessITex;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var($colorLessITex);
+  color: $colorLessITex;
 
   &::before {
-    fill: var($colorLessITex);
+    fill: $colorLessITex;
     content: "";
   }
 
   &:focus,
   &:hover {
-    stroke: var($colorAccent);
+    stroke: $colorAccent;
   }
 }
 
@@ -70,7 +70,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var($colorAccent);
+    background-color: $colorAccent;
     bottom: -28px;
     left: 0;
   }

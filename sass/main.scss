@@ -1,21 +1,10 @@
-@use "./utils/colors" as *;
+@use "./utils/vars" as *;
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var($colorMain);
-  background: var ($backgroundColor);
+  color: $colorMain;
+  background: $colorBackground;
 }
-
-@import "./utils/reset";
-@import "./utils/container";
-@import "./utils/section";
-@import "./utils/link";
-@import "./utils/ul";
-@import "./utils/hide";
-@import "./utils/foto";
-@import "./utils/h3-title";
-@import "./utils/h2-heading";
-@import "./utils/is-hidden";
 
 @import "./components/header";
 @import "./components/navigation";
